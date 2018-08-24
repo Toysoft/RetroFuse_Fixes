@@ -732,67 +732,55 @@ menu_help_about( int action )
 }
 
 void
-menu_virtualkeyboard( int action )
+menu_vega_favouritegamelist( int action )
+{
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 7 );
+}
+
+void
+menu_vega_gamelist( int action )
+{
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 1 );
+}
+
+void
+menu_vega_gameinfo( int action )
+{
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 2 );
+}
+
+void
+menu_vega_virtualkeyboard( int action )
 {
   widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, action );
 }
 
 void
-menu_game_list( int action )
+menu_vega_accesssdcardgames( int action )
 {
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 1);
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 4 );
 }
 
 void
-menu_game_info( int action )
+menu_vega_savegamestate( int action )
 {
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 2);
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 5 );
 }
 
 void
-menu_game_settings( int action )
+menu_vega_loadgamestate( int action )
 {
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 3);
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 6 );
 }
 
 void
-menu_game_sdcard( int action )
+menu_vega_remapgamekeys( int action )
 {
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 4);
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 8 );
 }
 
 void
-menu_game_save( int action )
-{
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 5);
-}
-
-void
-menu_game_load( int action )
-{
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 6);
-}
-
-void
-menu_game_fav (int action )
-{
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 7);
-}
-
-void
-menu_game_remap_keys( int action )
-{
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 8);
-}
-
-void
-menu_hall_of_fame( int action )
-{
-    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 10);
-}
-
-void
-menu_game_apply_pokes( int action )
+menu_vega_applypokesifavailable( int action )
 {
     vegaApplyPokes();
     widget_end_all( WIDGET_FINISHED_CANCEL );
@@ -800,7 +788,19 @@ menu_game_apply_pokes( int action )
 }
 
 void
-menu_game_exit( int action )
+menu_vega_settings( int action )
+{
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 3 );
+}
+
+void
+menu_vega_halloffame( int action )
+{
+    widget_do( WIDGET_TYPE_VIRTUALKEYBOARD, 10 );
+}
+
+void
+menu_vega_switchoff( int action )
 {
     printf("\nExiting");
     fflush(stdout);

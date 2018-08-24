@@ -491,15 +491,15 @@ Help/_Keyboard..., Item
 Help/_About..., Item
 
 _Vega +, Branch
-Vega +/Favourite Game List, Item,, menu_game_fav
-Vega +/Game List, Item,, menu_game_list
-Vega +/Game info, Item,, menu_game_info
-Vega +/Virtual Keyboard, Item,, menu_virtualkeyboard
-Vega +/Access SD Card Games, Item,, menu_game_sdcard
-Vega +/Save game state, Item,, menu_game_save
-Vega +/Load game state, Item,, menu_game_load
-Vega +/Remap game keys, Item,, menu_game_remap_keys
-Vega +/Apply pokes (if available), Item,, menu_game_apply_pokes
-Vega +/Settings, Item,, menu_game_settings
-Vega +/Hall of Fame, Item,, menu_hall_of_fame
-Vega +/Switch off, Item,, menu_game_exit
+Vega +/Favourite Game List, Item
+Vega +/Game List, Item
+Vega +/Game info, Item
+Vega +/Virtual Keyboard, Item
+Vega +/Access SD Card Games, Item
+Vega +/Save game state, Item
+Vega +/Load game state, Item
+Vega +/Remap game keys, Item
+Vega +/Apply pokes (if available), Item
+Vega +/Settings, Item
+Vega +/Hall of Fame, Item
+Vega +/Switch off, Item

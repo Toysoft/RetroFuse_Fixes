@@ -789,12 +789,12 @@ ui_popup_menu( int native_key )
     break;
   case INPUT_KEY_F2:
     fuse_emulation_pause();
-    menu_virtualkeyboard( 0 );
+    menu_vega_virtualkeyboard( 0 );
     fuse_emulation_unpause();
     break;
   case INPUT_KEY_F3:
     fuse_emulation_pause();
-    menu_virtualkeyboard( 2 );
+    menu_vega_virtualkeyboard( 2 );
     fuse_emulation_unpause();
     break;
   case INPUT_KEY_F4:
