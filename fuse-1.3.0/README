@@ -16,10 +16,20 @@ retro-1.3.0$ make
 
 Please note that you might have to run the ./patch/configure command twice when running for the very first time.
 
+Further notes
+=============
 
+The Retro Computers released code from https://github.com/mozxilla/RetroFuse
+has been tidied up a bit. I don't _think_ I've broken any of the above, but
+may have done.
 
+The advantages of this version are:
 
+1) No need for any monkey patching of the generated files
+2) The main menu is active again; the Vega+ options are now under the
+   "Vega +" menu.
 
+-- Philip Kendall 2018-08-24
 
 The Free Unix Spectrum Emulator (Fuse) 1.3.0
 ============================================
