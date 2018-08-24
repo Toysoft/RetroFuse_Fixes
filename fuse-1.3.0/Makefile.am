@@ -55,7 +55,8 @@ fuse_SOURCES = display.c \
 	ui.c \
 	uidisplay.c \
 	uimedia.c \
-	utils.c
+	utils.c \
+	vega.c
 
 fuse_LDADD = \
              $(PTHREAD_LIBS) \
