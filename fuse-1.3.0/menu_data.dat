@@ -489,3 +489,17 @@ Media/IDE/DivIDE/Slave/_Eject, Item,, menu_media_ide_eject,, 7
 _Help, Branch
 Help/_Keyboard..., Item
 Help/_About..., Item
+
+_Vega +, Branch
+Vega +/Favourite Game List, Item,, menu_game_fav
+Vega +/Game List, Item,, menu_game_list
+Vega +/Game info, Item,, menu_game_info
+Vega +/Virtual Keyboard, Item,, menu_virtualkeyboard
+Vega +/Access SD Card Games, Item,, menu_game_sdcard
+Vega +/Save game state, Item,, menu_game_save
+Vega +/Load game state, Item,, menu_game_load
+Vega +/Remap game keys, Item,, menu_game_remap_keys
+Vega +/Apply pokes (if available), Item,, menu_game_apply_pokes
+Vega +/Settings, Item,, menu_game_settings
+Vega +/Hall of Fame, Item,, menu_hall_of_fame
+Vega +/Switch off, Item,, menu_game_exit
