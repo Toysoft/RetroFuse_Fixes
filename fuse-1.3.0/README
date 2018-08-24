@@ -11,10 +11,10 @@ It assumes a valid Yocto installation (fsl-community-bsp-krogoth) on /opt/poky/v
 To compile fuse for the Vega+ device please use the following commands:
 
 retro-1.3.0$ . /opt/poky/vega-one/environment-setup-armv5e-poky-linux-gnueabi
-retro-1.3.0$ ./patch/configure
+retro-1.3.0$ ./configure-for-mx233
 retro-1.3.0$ make
 
-Please note that you might have to run the ./patch/configure command twice when running for the very first time.
+Please note that you might have to run the configure-for-mx233 command twice when running for the very first time.
 
 Further notes
 =============

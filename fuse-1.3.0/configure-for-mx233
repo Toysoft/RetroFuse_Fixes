@@ -1,0 +1,15 @@
+#!/bin/bash
+echo Configuring...
+./configure  --host=armv5e-poky-linux-gnueabi --with-libspectrum-prefix=/path/to/arm/libspectrum-1.3.0 --with-sysroot=/opt/poky/vega-one/sysroots/armv5e-poky-linux-gnueabi --prefix=/media/sf_Retro/Fuse/fuse-noglibc --with-fb --without-gpm --without-libxml2 --without-pthread --without-joystick --without-png --without-zlib --without-gtk
+echo Patching fuse...
+sed 's/\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/#\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/g' Makefile > /tmp/Makefile
+cp /tmp/Makefile .
+cd ui/sdl && sed 's/\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/#\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/g' Makefile > /tmp/Makefile
+cp /tmp/Makefile .
+cd ../..
+cd ui/fb && sed 's/\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/#\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/g' Makefile > /tmp/Makefile
+cp /tmp/Makefile .
+cd ../..
+cd ui/widget && sed 's/\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/#\/opt\/poky\/vega-one\/sysroots\/x86_64-pokysdk-linux\/usr\/bin\/perl/g' Makefile > /tmp/Makefile
+cp /tmp/Makefile .
+cd ../..
